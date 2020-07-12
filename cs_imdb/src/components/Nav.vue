@@ -60,7 +60,7 @@ export default {
 <style scoped lang="scss">
 #nav {
     text-align: left;
-    background-color: #061921;
+     background-color:rgb(231, 228, 228);
     padding-bottom: 2rem;
     a {
         text-decoration: none;
