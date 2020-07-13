@@ -7,5 +7,3 @@ https://developers.themoviedb.org/3/getting-started/introduction
 # Demo
 
 ![CS-IMDb Demo](demo.gif)
-
-![CS-IMDb Demo](demo2.gif)
