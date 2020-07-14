@@ -6,7 +6,7 @@ const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const User = require('./models/User');
 const db = require('./config/keys').mongoURI;
-const path = require(“path”);
+
 
 
 //middleware
@@ -14,7 +14,6 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, “client/build”)))
 
 // Connect to MongoDB
 mongoose
