@@ -7,7 +7,7 @@
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "server": "nodemon server",
-    "start": "cd cs_imdb && npm run server && npm run serve"
+    "start": "npm run server && npm run serve"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
