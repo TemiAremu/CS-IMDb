@@ -5,7 +5,7 @@ const bcrypt = require('bcrypt');
 const cors = require('cors');
 const jwt = require('jsonwebtoken');
 const User = require('./models/User');
-const db = require('./config/config').mongoURI;
+const db = require('./config/keys').mongoURI;
 const dotenv = require("dotenv").config();
 
 //middleware
