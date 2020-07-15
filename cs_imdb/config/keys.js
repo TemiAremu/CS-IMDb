@@ -3,6 +3,13 @@ dbPassword = 'mongodb+srv://admin:admin@movie-xtpb4.mongodb.net/test?retryWrites
 module.exports = {
     mongoURI: dbPassword,
       devServer: {
-        disableHostCheck: true
+        disableHostCheck: true,
+            compress: true,
+  inline: true,
+  port: '8080',
+  allowedHosts: [
+      '.amazonaws.com'
+  ]
     }
+    
 };
