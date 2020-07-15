@@ -46,6 +46,7 @@
     "env": {
       "node": true
     },
+    "proxy": "http://0.0.0.0:8080",
     "extends": [
       "plugin:vue/essential",
       "eslint:recommended"
