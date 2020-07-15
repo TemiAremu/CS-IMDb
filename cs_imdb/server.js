@@ -8,8 +8,6 @@ const User = require('./models/User');
 const db = require('./config/config').mongoURI;
 const dotenv = require("dotenv").config();
 
-
-
 //middleware
 const app = express();
 app.use(cors());
@@ -19,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 // Connect to MongoDB
 mongoose
   .connect(
-    db,
+    process.env.db,
     { useNewUrlParser: true,
      useCreateIndex: true,
         useUnifiedTopology: true} 
