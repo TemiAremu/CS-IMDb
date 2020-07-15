@@ -19,7 +19,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 mongoose
   .connect(
     db,
-    { useNewUrlParser: true} 
+    { useNewUrlParser: true,
+     useCreateIndex: true,
+        useUnifiedTopology: true} 
   )
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err)); 
